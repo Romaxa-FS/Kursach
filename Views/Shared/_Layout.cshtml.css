@@ -1,0 +1,110 @@
+﻿.text-muted {
+  color: #6c757d; 
+}
+
+#subtotal {
+  font-size: 0.9em; 
+}
+
+#total-amount {
+  font-size: 1.2em; 
+  font-weight: bold;
+  color: black;
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+header {
+  background-color: #ffffff !important; 
+}
+
+.navbar {
+  background-color: #ffffff !important; 
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-body {
+  padding: 30px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+footer.footer {
+  width: 100%;
+  padding: 20px 0; 
+}
+
+.jumbotron {
+  margin-bottom: 0 !important; 
+  padding-bottom: 0 !important; 
+}
+.custom-margin-top {
+  margin-top: 30px; 
+}
+.container {
+  padding-top: 0 !important; 
+  margin-top: 0 !important; 
+}
+
+main {
+  padding-top: 0 !important; 
+  margin-top: 0 !important;
+}
+
+h2 {
+  margin-top: 1.5rem !important;
+}

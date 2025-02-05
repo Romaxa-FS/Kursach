@@ -1,0 +1,72 @@
+@model Product
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="@Url.Content(Model.ImagePath.StartsWith("/") ? Model.ImagePath : $"/{Model.ImagePath}")" 
+                 class="img-fluid rounded" 
+                 style="width: 100%; height: auto; max-width: 300px; object-fit: cover;" 
+                 alt="@Model.Title" />
+        </div>
+        <div class="col-md-8">
+            <h2 class="mb-3">@Model.Title</h2>
+            <p class="text-muted mb-3">@Model.Description</p>
+            <h4 class="text-dark mb-4">@Model.Price р.</h4>
+            <div class="d-flex">
+      
+                <form asp-action="AddToCart" asp-controller="Cart" method="post" class="me-2">
+                    <input type="hidden" name="productId" value="@Model.Id" />
+                    <button type="submit" class="btn btn-dark">В корзину</button>
+                </form>
+                
+  
+                <form asp-action="AddToWishlist" asp-controller="Wishlist" method="post">
+                    <input type="hidden" name="productId" value="@Model.Id" />
+                    <button type="submit" class="btn btn-outline-danger">
+                        <i class="bi bi-heart"></i> 
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addToWishlist(productId) {
+        fetch('/wishlist/add', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            body: JSON.stringify({ productId: productId })
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Товар добавлен в желаемое!');
+            } else {
+                alert('Ошибка при добавлении товара в желаемое.');
+            }
+        });
+    }
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+<style>
+    .btn-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .btn-circle .bi-heart {
+        font-size: 24px;
+        color: white;
+    }
+</style>

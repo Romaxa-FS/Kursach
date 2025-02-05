@@ -1,0 +1,178 @@
+<h2 class="text-center">Корзина</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (Model.Items.Count == 0)
+{
+    <p class="text-center">Корзина пуста.</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var item in Model.Items)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="@item.Product.ImagePath" class="card-img-top" alt="@item.Product.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Product.Title</h5>
+                        <p class="card-text">@item.Product.Description</p>
+                        <p class="card-text"><strong>Цена за единицу: @item.Product.Price.ToString("N0")</strong> р.</p>
+
+                        <form method="post" asp-action="UpdateQuantity" asp-route-productId="@item.ProductId" class="d-flex align-items-center">
+                            <input type="hidden" name="currentQuantity" value="@item.Quantity" />
+                            <button type="submit" name="change" value="-1" class="btn btn-secondary btn-sm">-</button>
+                            <span class="mx-2">@item.Quantity</span>
+                            <button type="submit" name="change" value="1" class="btn btn-secondary btn-sm">+</button>
+                        </form>
+
+                        <p class="card-text"><strong>Общая стоимость: @item.TotalPrice.ToString("N0")</strong> р.</p>
+                        <form asp-action="RemoveFromCart" asp-route-productId="@item.ProductId" method="post">
+                            <button type="submit" class="btn btn-dark">Удалить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="delivery-options mt-4">
+    <h5 class="delivery-title">Выберите способ доставки:</h5>
+    <label class="delivery-option"><input type="radio" name="delivery" value="курьер" checked data-cost="600"> Курьером (600 ₽)</label><br>
+    <label class="delivery-option"><input type="radio" name="delivery" value="стандартная" data-cost="150"> Стандартная доставка (150 ₽)</label><br>
+</div>
+
+<div class="form-group mt-4">
+    <label for="orderComment" class="form-label">Комментарий к заказу:</label>
+    <textarea id="orderComment" class="form-control" rows="3" name="orderComment" placeholder="Добавьте комментарий к вашему заказу...">@Model.OrderComment</textarea>
+</div>
+
+<div class="delivery-form mt-4">
+    <h5 class="delivery-title">Данные для доставки:</h5>
+    <div class="form-group mt-3">
+    <label for="userName">Имя:</label>
+    <input type="text" class="form-control" id="userName" name="userName" value="@ViewBag.UserName" />
+</div>
+
+<div class="form-group">
+    <label for="address">Адрес:</label>
+    <input type="text" class="form-control" id="address" name="address" value="@ViewBag.Address" />
+</div>
+
+<div class="form-group">
+    <label for="phone">Телефон:</label>
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="Введите номер телефона" />
+</div>
+</div>
+
+<div class="order-summary text-right mt-4">
+    <h5 class="text-muted" style="font-size: 0.9em;">Стоимость без налога (13%) и доставки:</h5>
+    <h5 class="text-muted" style="font-size: 0.9em;" id="subtotal">@Model.Subtotal.ToString("N0") </h5>
+    <h4>Итоговая стоимость: <strong id="total-amount" class="total-amount" style="color: black;">@Model.TotalAmount.ToString("N0")</strong> ₽</h4>
+</div>
+
+<div class="payment-delivery-section d-flex justify-content-between align-items-center mt-4">
+    <div class="payment-options">
+        <label class="payment-option"><input type="radio" name="payment-method" value="cash" checked> Наличными</label>
+        <label class="payment-option ml-3"><input type="radio" name="payment-method" value="profile-balance"> Счет (карта 4444 5555 4444 5555)</label>
+    </div>
+    <button id="checkout-button" class="btn btn-dark">Оплатить</button>
+</div>
+
+
+
+}
+  
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const deliveryOptions = document.querySelectorAll('input[name="delivery"]');
+    const subtotalElement = document.getElementById('subtotal');
+    const totalAmountElement = document.getElementById('total-amount');
+
+
+    function updateTotalAmount() {
+        const selectedOption = document.querySelector('input[name="delivery"]:checked');
+        const deliveryCost = parseFloat(selectedOption.dataset.cost);
+        const subtotal = parseFloat(subtotalElement.textContent.replace(/\D/g, ''));
+        const tax = subtotal * 0.13; 
+        const totalAmount = subtotal + deliveryCost + tax;
+
+
+        totalAmountElement.textContent = `${totalAmount.toLocaleString()} ₽`;
+    }
+
+
+    updateTotalAmount();
+
+
+    deliveryOptions.forEach(option => {
+        option.addEventListener('change', function () {
+            updateTotalAmount();
+
+
+            fetch('/Cart/SaveDeliveryOption', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ deliveryOption: option.value })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log('Delivery option saved successfully.');
+                }
+            });
+        });
+    });
+});
+
+</script>
+
+
+
+  <script>
+document.getElementById('checkout-button').addEventListener('click', function () {
+    var totalAmount = parseFloat(document.getElementById('total-amount').innerText.replace(/\s+/g, ''));
+
+    fetch("/Checkout/Checkout", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ totalAmount: totalAmount, paymentMethod: document.querySelector('input[name="payment-method"]:checked').value })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            window.location.href = data.redirectUrl;
+        } else {
+            alert("Ошибка оплаты: " + data.message);
+        }
+    })
+    .catch(error => {
+        console.error("Ошибка:", error);
+        alert("Ошибка оплаты: " + error.message);
+    });
+});
+
+</script>

@@ -1,0 +1,46 @@
+@model IEnumerable<MyWeb2.Models.Product>
+
+<h2 class="text-center mb-4">Каталог товаров</h2>
+
+<div class="container">
+    <div class="row mb-4 justify-content-center">
+        <div class="col-md-8">
+            <form method="get" asp-action="Catalog" class="input-group shadow-lg rounded">
+                <input type="text" name="searchTerm" class="form-control border-right-0 rounded-left" 
+                       placeholder="Поиск товаров..." value="@ViewData["SearchTerm"]" aria-label="Поиск товаров">
+                <button type="submit" class="btn btn-primary rounded-right">
+                    <i class="fas fa-search"></i> 
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+  <div class="mb-4">
+    <form method="get" asp-action="Catalog">
+        <label for="sortBy">Сортировать по: </label>
+        <select name="sortBy" id="sortBy" class="form-control" onchange="this.form.submit()">
+          <!option value="price_asc" @(Context.Request.Query["sortBy"] == "price_asc" ? "selected" : "")>Цена: по возрастанию</!option>
+<!option value="price_desc" @(Context.Request.Query["sortBy"] == "price_desc" ? "selected" : "")>Цена: по убыванию</!option>
+<!option value="title" @(Context.Request.Query["sortBy"] == "title" ? "selected" : "")>По названию</!option>
+        </select>
+    </form>
+</div>
+
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="@Url.Content(product.ImagePath.StartsWith("/") ? product.ImagePath : $"/{product.ImagePath}")" alt="@product.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Title</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text"><strong>@product.Price.ToString("N0")</strong> р.</p>
+                        <a href="/Product/Details/@product.Id" class="btn btn-dark">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>

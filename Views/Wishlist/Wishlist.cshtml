@@ -1,0 +1,34 @@
+@model Wishlist
+
+<h2 class="text-center">Список желаемого</h2>
+
+@if (Model.Items.Any())
+{
+    <ul>
+        <div class="row">
+            @foreach (var item in Model.Items)
+            {
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="@item.Product.ImagePath" class="card-img-top" alt="@item.Product.Title">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Product.Title</h5>
+                            <p class="card-text">@item.Product.Description</p>
+                              <p class="card-text"><strong>Цена за единицу: @item.Product.Price.ToString("N0")</strong> р.</p>
+                            <div class="d-flex justify-content-between">
+                                <form asp-action="RemoveFromWishlist" asp-route-productId="@item.ProductId" method="post">
+                                    <button type="submit" class="btn btn-dark">Удалить</button>
+                                </form>
+                                <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-dark">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </ul>
+}
+else
+{
+    <p class="text-center">Ваш список желаемого пуст.</p>
+}

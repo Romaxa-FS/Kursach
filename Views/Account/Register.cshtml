@@ -1,0 +1,74 @@
+@model MyWeb2.Models.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Регистрация";
+}
+<style>
+    body {
+      
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+    }
+
+    .card-header {
+        background-color: #8FD3C1; 
+        color: white;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .btn-primary {
+        background-color: #8FD3C1;
+        border-color: #8FD3C1;
+</style>
+
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Регистрация</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Register" method="post">
+    <div class="form-group mb-3">
+        <label for="UserName">Имя пользователя</label>
+      
+        <input type="text" class="form-control" id="UserName" name="UserName" placeholder="Введите имя пользователя" autocomplete="off" required>
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="Email">Электронная почта</label>
+       
+        <input type="email" class="form-control" id="Email" name="Email" placeholder="Введите email" autocomplete="email" required>
+    </div>
+    
+    <div class="form-group mb-3">
+        <label for="Password">Пароль</label>
+        <input type="password" class="form-control" id="Password" name="Password" placeholder="Введите пароль" autocomplete="new-password" required>
+    </div>
+    
+    <div class="form-group mb-3">
+        <label for="ConfirmPassword">Подтвердите пароль</label>
+        <input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword" placeholder="Подтвердите пароль" autocomplete="new-password" required>
+    </div>
+    
+    <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+</form>
+
+                </div>
+                <div class="card-footer text-center">
+                    <p>Уже есть аккаунт? <a href="/Account/Login">Войти</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

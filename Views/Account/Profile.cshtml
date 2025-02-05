@@ -1,0 +1,119 @@
+@model ProfileViewModel
+
+<div class="container mt-4">
+    <h2 class="text-center">Редактирование профиля</h2>
+
+ 
+    <div class="text-center mb-4">
+        @if (!string.IsNullOrEmpty(Model.AvatarPath))
+        {
+            <div class="mb-3">
+                <img src="@Model.AvatarPath" alt="Аватар пользователя" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
+                <p>Текущий аватар</p>
+            </div>
+        }
+        else
+        {
+            <img src="/Images/Avatar/avatar-cat.jpg" alt="Avatar" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
+        }
+    </div>
+
+    <form asp-action="UploadAvatar" method="post" enctype="multipart/form-data" class="mb-3 text-center">
+        <div class="form-group">
+            <label for="Avatar">Загрузить аватар</label>
+            <input type="file" name="avatar" class="form-control mt-2" />
+            <span asp-validation-summary="ModelOnly" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-secondary mt-3">Загрузить аватар</button>
+    </form>
+
+
+    <form asp-action="Profile" method="post">
+    
+        <input type="hidden" asp-for="AvatarPath" />
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="UserName">Имя</label>
+                    <input asp-for="UserName" class="form-control" id="UserName" type="text" placeholder="Введите имя" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="Email">Email</label>
+                    <input asp-for="Email" class="form-control" id="Email" type="email" placeholder="Введите email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Password">Пароль (оставьте пустым, чтобы сохранить текущий)</label>
+            <input asp-for="Password" class="form-control" id="Password" type="password" placeholder="Введите новый пароль" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="DeliveryAddress">Адрес доставки</label>
+            <input asp-for="DeliveryAddress" class="form-control" id="DeliveryAddress" type="text" placeholder="Введите адрес доставки" />
+            <span asp-validation-for="DeliveryAddress" class="text-danger"></span>
+        </div>
+        
+        <div class="form-group mb-3">
+            <label for="Balance">Баланс счета магазина (руб.): @Model.Balance</label>
+            
+        </div>
+
+        <div class="form-group text-center">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addMoneyModal">Добавить деньги</button>
+        </div>
+    
+        <div class="form-group d-flex justify-content-between align-items-center">
+            <button type="submit" class="btn btn-light" style="color: black;">Сохранить изменения</button>
+        </div>
+    </form>
+
+ 
+    <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="m-0">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-light" style="color: black;">Выйти из аккаунта</button>
+    </form>
+
+
+    <div class="mt-4">
+        <h3>История заказов</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Заказ №001 - Оплачен</li>
+            <li class="list-group-item">Заказ №002 - Оплачен</li>
+            <li class="list-group-item">Заказ №003 - Оплачен</li>
+            <li class="list-group-item">Заказ №004 - Оплачен</li>
+            <li class="list-group-item">Заказ №005 - Оплачен</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="modal fade" id="addMoneyModal" tabindex="-1" aria-labelledby="addMoneyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addMoneyModalLabel">Добавить деньги</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="AddMoney" method="post">
+                    <div class="form-group">
+                        <label for="amount">Введите сумму</label>
+                        <input type="number" name="amount" class="form-control" id="amount" required min="0" step="0.01" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                        <button type="submit" class="btn btn-primary">Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+@model IEnumerable<MyWeb2.Models.Product>
+
+<div class="container mb-5">
+    <h2 class="text-center mb-4">Новинки</h2>
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="@product.ImagePath" class="card-img-top" alt="@product.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Title</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text">@product.Price.ToString("0 р.")</p>
+                        <a href="/Product/Details/@product.Id" class="btn btn-dark">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

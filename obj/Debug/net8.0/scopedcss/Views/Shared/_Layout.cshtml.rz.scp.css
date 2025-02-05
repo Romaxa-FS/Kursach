@@ -1,0 +1,110 @@
+.text-muted[b-1ri2hnldng] {
+  color: #6c757d; 
+}
+
+#subtotal[b-1ri2hnldng] {
+  font-size: 0.9em; 
+}
+
+#total-amount[b-1ri2hnldng] {
+  font-size: 1.2em; 
+  font-weight: bold;
+  color: black;
+}
+a.navbar-brand[b-1ri2hnldng] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+header[b-1ri2hnldng] {
+  background-color: #ffffff !important; 
+}
+
+.navbar[b-1ri2hnldng] {
+  background-color: #ffffff !important; 
+}
+.card[b-1ri2hnldng] {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-body[b-1ri2hnldng] {
+  padding: 30px;
+}
+body[b-1ri2hnldng]::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.form-control[b-1ri2hnldng] {
+  border-radius: 10px;
+}
+img[b-1ri2hnldng] {
+  max-width: 100%;
+  height: auto;
+}
+a[b-1ri2hnldng] {
+  color: #0077cc;
+}
+
+.btn-primary[b-1ri2hnldng] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-1ri2hnldng], .nav-pills .show > .nav-link[b-1ri2hnldng] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-1ri2hnldng] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-1ri2hnldng] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-1ri2hnldng] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-1ri2hnldng] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+html[b-1ri2hnldng], body[b-1ri2hnldng] {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+footer.footer[b-1ri2hnldng] {
+  width: 100%;
+  padding: 20px 0; 
+}
+
+.jumbotron[b-1ri2hnldng] {
+  margin-bottom: 0 !important; 
+  padding-bottom: 0 !important; 
+}
+.custom-margin-top[b-1ri2hnldng] {
+  margin-top: 30px; 
+}
+.container[b-1ri2hnldng] {
+  padding-top: 0 !important; 
+  margin-top: 0 !important; 
+}
+
+main[b-1ri2hnldng] {
+  padding-top: 0 !important; 
+  margin-top: 0 !important;
+}
+
+h2[b-1ri2hnldng] {
+  margin-top: 1.5rem !important;
+}

@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+@{
+    ViewData["Title"] = "Главная страница";
+}
+@model IEnumerable<Product>
+@using System.Globalization
+
+<div class="jumbotron text-center mb-4 container-fluid" style="background-image: ; background-size: cover; background-position: center; padding: 50px 0; margin-bottom: 40px;">
+    <div class="container text-white" style="background-color: rgba(0,0,0,0.5); padding: 20px;">
+        <h1 class="display-4">Добро пожаловать в СomputerShop</h1>
+        <p class="lead">Любой комьютер для любых дел!</p>
+        @if (ViewBag.Message != null)
+        {
+            <h2>@ViewBag.Message</h2>
+        }
+    </div>
+</div>
+
+
+        <div class="col-md-5 mx-auto" style="max-width: 45%;">
+    <div class="card text-center">
+        <a href="/Product/Catalog" class="text-decoration-none text-dark">
+            <img src="~/Images/имба.jpg" class="card-img-top" alt="Каталог">
+            <div class="card-body">
+                <h5 class="card-title">Каталог</h5>
+            </div>
+        </a>
+    </div>
+</div>
+
+

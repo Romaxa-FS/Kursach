@@ -1,0 +1,80 @@
+@model MyWeb2.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Вход";
+}
+<style>
+    body {
+    
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+    }
+
+    .card-header {
+        background-color: #007bff;
+        color: white;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Вход</h3>
+                </div>
+                <div class="card-body">
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                @error.ErrorMessage<br />
+                            }
+                        </div>
+                    }
+
+                    <form asp-action="Login" method="post">
+    <div class="form-group mb-3">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" id="Email" placeholder="Введите электронную почту" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" class="form-control" id="Password" placeholder="Введите пароль" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-check mb-3">
+        <input asp-for="RememberMe" class="form-check-input" id="RememberMe" type="checkbox" />
+        <label asp-for="RememberMe" class="form-check-label"></label>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Войти</button>
+    
+</form>
+               <div class="card-footer text-center">
+    <p>
+        Нет аккаунта? <a href="/Account/Register">Зарегистрироваться</a> |
+        <a asp-action="ForgotPassword" asp-controller="Account">Забыли пароль?</a>
+    </p>
+</div>
+
+        </div>
+    </div>
+</div>
+

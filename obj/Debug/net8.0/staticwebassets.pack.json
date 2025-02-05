@@ -1,0 +1,333 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MyWeb2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MyWeb2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\08f5c0f8-bef1-4787-a061-e37388218200.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\08f5c0f8-bef1-4787-a061-e37388218200.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\11a15d96-cb1a-442f-93c0-878f099c1ee1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\11a15d96-cb1a-442f-93c0-878f099c1ee1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\2c55f020-1a85-4b77-b4f2-df7ce9a4027b.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\2c55f020-1a85-4b77-b4f2-df7ce9a4027b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\510d349a-56c2-4c9a-ba96-71499f5a8973.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\510d349a-56c2-4c9a-ba96-71499f5a8973.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\6ad3c201-b736-4366-a079-b0c3ce9e419f.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\6ad3c201-b736-4366-a079-b0c3ce9e419f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\aaa639a6-690f-481c-836e-eb0f69c9c262.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\aaa639a6-690f-481c-836e-eb0f69c9c262.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\avatar-cat.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\avatar-cat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\b275ba9c-a591-4427-acfe-ddda9c5f0549.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\b275ba9c-a591-4427-acfe-ddda9c5f0549.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\black-cat.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\black-cat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\gojo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\gojo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\gun.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\gun.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\hehe.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\hehe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\Avatar\\hoho.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\hoho.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\имба.jpg",
+      "PackagePath": "staticwebassets\\Images\\имба.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\имба2.jpg",
+      "PackagePath": "staticwebassets\\Images\\имба2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\слабый.jpg",
+      "PackagePath": "staticwebassets\\Images\\слабый.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\Images\\средний.jpg",
+      "PackagePath": "staticwebassets\\Images\\средний.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ромка\\OneDrive\\Desktop\\Рома\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MyWeb2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MyWeb2.props",
+      "PackagePath": "build\\MyWeb2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MyWeb2.props",
+      "PackagePath": "buildMultiTargeting\\MyWeb2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MyWeb2.props",
+      "PackagePath": "buildTransitive\\MyWeb2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
